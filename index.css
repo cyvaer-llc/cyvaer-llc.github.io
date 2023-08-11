@@ -100,8 +100,8 @@ section > p {
   body {
     color: #222;
     background-color: #d0d8df;
-    background: radial-gradient(ellipse at bottom left, #d8f0f0, #d0d0d080),
-            radial-gradient(ellipse at bottom right, #f8d0d0, #ddd);
+    background: radial-gradient(ellipse at bottom left, #c8f0f0, #d0d0d0c0),
+            radial-gradient(ellipse at bottom right, #ff0000, #ddd);
   }
 
   h1 {
@@ -109,6 +109,6 @@ section > p {
   }
 
   section {
-    background: #d0d4d8;
+    background: #d8d0d088;
   }
 }
