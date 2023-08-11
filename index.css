@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15pt;
+  color: #d0d8df;
+
+  background-color: #111;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+  margin-inline: 1em;
+
+  background: radial-gradient(ellipse at bottom left, #182020, #10080880),
+            radial-gradient(ellipse at bottom right, #382020, #000);
+}
+
+h1, h2 {
+  font-family: 'Bodoni Moda', Georgia, serif;
+}
+
+h1 {
+  font-size: 102pt;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 72pt;
+  }
+}
+
+h2 {
+  font-size: 24pt;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  max-width: 720px;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer {
+  margin-block: 1rem;
+}
+
+section {
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 0.25em;
+  padding: 1em;
+
+  background: #141010;
+
+  /* box-shadow: 0 4px 12px 0px #88aaff10; */
+}
+
+section > p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.column-flow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.column-flow > *:nth-last-of-type(1) {
+  grid-column: span 2;
+}
+
+@media (max-width: 720px) {
+  .column-flow {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);;
+  }
+
+  .column-flow > *:nth-last-of-type(1) {
+    grid-column: span 1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #222;
+    background-color: #d0d8df;
+    background: radial-gradient(ellipse at bottom left, #d8f0f0, #d0d0d080),
+            radial-gradient(ellipse at bottom right, #f8d0d0, #ddd);
+  }
+
+  h1 {
+    color: black;
+  }
+
+  section {
+    background: #d0d4d8;
+  }
+}
